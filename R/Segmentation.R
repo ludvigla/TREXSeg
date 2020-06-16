@@ -241,7 +241,7 @@ OverlapImages <- function (
   # Summarize overlap across images
   if (verbose) cat(paste0("Calculating intersect between images \n"))
   d <- data.frame(a = as.numeric(ima), b = as.numeric(imb))
-  d <- table(d) %>% as.matrix()
+  d <- as.matrix(table(d))
   d <- d[-1, -1]
 
   # Extract area for image a and image b

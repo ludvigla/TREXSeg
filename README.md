@@ -1,8 +1,28 @@
+Installation
+------------
+
+------------------------------------------------------------------------
+
+To install TREXSeg and run this tutorial you should first make sure to
+install EBImage from Bioconductor. You can then isntall the package from
+GitHub using the devtools R package.
+
+``` r
+# Install EBImage
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("EBImage")
+
+# Install TREXSeg
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("devtools")
+
+devtools::install_github("ludvigla/TREXSeg")
+```
+
 ``` r
 library(EBImage)
-library(ggplot2)
-library(cowplot)
-library(magrittr)
 library(TREXSeg)
 ```
 
