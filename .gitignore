@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 TREXSeg.Rproj
-demo.Rmd
-demo.html
+doc
+.DS_Store
